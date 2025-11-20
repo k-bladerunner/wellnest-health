@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WellNest Health</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>WellNest Health</h1>
+                <p class="tagline">HOLISTIC HEALTHCARE</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Get in touch with us</h1>
+                    <p>Book an appointment, ask a question, or speak with our care team. We're here to help you on your health journey.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=600&fit=crop" alt="Contact Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>Multiple ways to reach us</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <h3>Phone</h3>
+                    <p><strong>Main Line:</strong><br>xxxxxxxxxx</p>
+                    <p><strong>Emergency:</strong><br>108</p>
+                    <p><strong>Appointments:</strong><br>xxxxxxxxxx</p>
+                </div>
+                <div class="card text-center">
+                    <h3>Email</h3>
+                    <p><strong>General:</strong><br>info@wellnesthealth.com</p>
+                    <p><strong>Appointments:</strong><br>appointments@wellnesthealth.com</p>
+                    <p><strong>Support:</strong><br>support@wellnesthealth.com</p>
+                </div>
+                <div class="card text-center">
+                    <h3>Location</h3>
+                    <p><strong>Main Facility:</strong></p>
+                    <p>Newton School of Technology<br>Sonipat, Haryana<br>India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-mint">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book an Appointment</h2>
+                <p>Fill out the form below and we'll contact you within 24 hours</p>
+            </div>
+            <form method="POST" action="submit_appointment.php">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Appointment Details</legend>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="appointmentDate">Preferred Date</label>
+                            <input type="date" id="appointmentDate" name="appointmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Preferred Time</label>
+                            <input type="time" id="appointmentTime" name="appointmentTime" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Choose a department</option>
+                            <option value="general">General Medicine</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="mental-health">Mental Health</option>
+                            <option value="womens-health">Women's Health</option>
+                            <option value="pediatrics">Pediatrics</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor">Preferred Doctor (Optional)</label>
+                        <select id="doctor" name="doctor">
+                            <option value="">Any available doctor</option>
+                            <option value="dr-rodriguez">Dr. Amanda Rodriguez</option>
+                            <option value="dr-mitchell">Dr. James Mitchell</option>
+                            <option value="dr-sharma">Dr. Priya Sharma</option>
+                            <option value="dr-chen">Dr. Robert Chen</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Medical Information</legend>
+                    <div class="form-group">
+                        <label for="reason">Reason for Visit</label>
+                        <textarea id="reason" name="reason" rows="4" required placeholder="Please describe your symptoms or reason for booking..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="medications">Current Medications (Optional)</label>
+                        <textarea id="medications" name="medications" rows="3" placeholder="List any medications you are currently taking..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="allergies">Allergies (Optional)</label>
+                        <input type="text" id="allergies" name="allergies" placeholder="List any known allergies">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group">
+                        <label for="priority">Urgency Level</label>
+                        <select id="priority" name="priority">
+                            <option value="routine">Routine - Next available</option>
+                            <option value="soon">Soon - Within a week</option>
+                            <option value="urgent">Urgent - Within 2-3 days</option>
+                            <option value="emergency">Emergency - Today</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Additional Comments (Optional)</label>
+                        <textarea id="comments" name="comments" rows="3" placeholder="Any additional information you'd like us to know..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button type="submit" class="btn-large">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our Facility</h2>
+                <p>We're here to serve you</p>
+            </div>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Operating Hours</h3>
+                    <ul style="list-style: none; margin: 0;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #EAF4F4;"><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #EAF4F4;"><strong>Saturday:</strong> 9:00 AM - 5:00 PM</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #EAF4F4;"><strong>Sunday:</strong> 10:00 AM - 4:00 PM</li>
+                        <li style="padding: 0.75rem 0;"><strong>Emergency Services:</strong> 24/7</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Main Medical Center</h3>
+                    <p><strong>Address:</strong></p>
+                    <p>Newton School of Technology<br>
+                    Sonipat, Haryana<br>
+                    India</p>
+                    <p style="margin-top: 1.5rem;"><strong>Emergency Hotline:</strong><br>
+                    <span style="font-size: 1.5rem; color: #4A8C8C; font-weight: 700;">108</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-mint">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Contact</h2>
+                <p>Have a question? Send us a message</p>
+            </div>
+            <form method="POST" action="submit_contact.php" style="max-width: 800px; margin: 0 auto;">
+                <div class="grid grid-2">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn-large">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WellNest Health</h4>
+                    <p>Holistic healthcare that treats the root cause, not just symptoms. Located at Newton School of Technology, Sonipat.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services & Pricing</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@wellnesthealth.com</p>
+                    <p>Phone: xxxxxxxxxx</p>
+                    <p>Emergency: 108</p>
+                    <p>Newton School of Technology, Sonipat</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WellNest Health. All rights reserved. Designed by Vishal Kumar</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
